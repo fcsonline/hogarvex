@@ -29,7 +29,7 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
           {/* Logo */}
           <Link href={`/${lang}`} className="flex-shrink-0">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-small.png"
               alt="Hogarvex - Instalaciones, Reparaciones y Mantenimiento"
               width={150}
               height={50}
