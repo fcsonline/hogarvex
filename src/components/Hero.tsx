@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Dictionary, Locale } from "@/app/[lang]/dictionaries";
 
 export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
@@ -14,7 +15,20 @@ export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-        <div className="max-w-3xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+        {/* Logo grande */}
+        <div className="flex-shrink-0">
+          <Image
+            src="/images/logo.png"
+            alt="Hogarvex - Instalaciones, Reparaciones y Mantenimiento"
+            width={280}
+            height={280}
+            className="w-48 md:w-72 h-auto drop-shadow-2xl brightness-0 invert"
+            priority
+          />
+        </div>
+
+        <div className="max-w-3xl text-center md:text-left">
           {/* Badge */}
           <span className="inline-flex items-center gap-2 bg-gold/20 text-gold border border-gold/30 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
             <svg
@@ -103,6 +117,7 @@ export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
               {dict.hero.trust3}
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

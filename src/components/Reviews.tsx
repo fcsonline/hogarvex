@@ -17,12 +17,19 @@ function Stars({ rating }: { rating: number }) {
   );
 }
 
+const avatars = [
+  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
+  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
+  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+];
+
 export function Reviews({ dict }: { dict: Dictionary }) {
   const reviews = [
-    dict.reviews.review1,
-    dict.reviews.review2,
-    dict.reviews.review3,
-    dict.reviews.review4,
+    { ...dict.reviews.review1, avatar: avatars[0] },
+    { ...dict.reviews.review2, avatar: avatars[1] },
+    { ...dict.reviews.review3, avatar: avatars[2] },
+    { ...dict.reviews.review4, avatar: avatars[3] },
   ];
 
   return (
@@ -47,11 +54,18 @@ export function Reviews({ dict }: { dict: Dictionary }) {
               <p className="text-gray-700 mt-4 text-sm leading-relaxed">
                 &ldquo;{review.text}&rdquo;
               </p>
-              <div className="mt-4 pt-4 border-t border-gray-200">
-                <p className="font-semibold text-sm text-gray-900">
-                  {review.name}
-                </p>
-                <p className="text-xs text-gray-500">{review.location}</p>
+              <div className="mt-4 pt-4 border-t border-gray-200 flex items-center gap-3">
+                <img
+                  src={review.avatar}
+                  alt={review.name}
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="font-semibold text-sm text-gray-900">
+                    {review.name}
+                  </p>
+                  <p className="text-xs text-gray-500">{review.location}</p>
+                </div>
               </div>
             </div>
           ))}
