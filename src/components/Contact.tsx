@@ -86,6 +86,25 @@ export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
           </div>
 
           <div>
+            <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
+              {dict.contact.service} *
+            </label>
+            <select
+              id="service"
+              name="service"
+              required
+              defaultValue=""
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-colors bg-white"
+            >
+              <option value="" disabled>{dict.contact.servicePlaceholder}</option>
+              <option value="fontaneria">{dict.contact.servicePlumbing}</option>
+              <option value="electricidad">{dict.contact.serviceElectrical}</option>
+              <option value="reparaciones">{dict.contact.serviceRepairs}</option>
+              <option value="otros">{dict.contact.serviceOther}</option>
+            </select>
+          </div>
+
+          <div>
             <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
               {dict.contact.description} *
             </label>
@@ -97,20 +116,6 @@ export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
               placeholder={dict.contact.descriptionPlaceholder}
               className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-colors resize-none"
             />
-          </div>
-
-          <div>
-            <label htmlFor="photo" className="block text-sm font-medium text-gray-700 mb-1">
-              {dict.contact.photo}
-            </label>
-            <input
-              type="file"
-              id="photo"
-              name="photo"
-              accept="image/*"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gold/10 file:text-gold hover:file:bg-gold/20"
-            />
-            <p className="text-xs text-gray-500 mt-1">{dict.contact.photoHelp}</p>
           </div>
 
           <input type="hidden" name="lang" value={lang} />
