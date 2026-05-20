@@ -52,7 +52,7 @@ export async function POST(request: Request) {
     const contactId = contact.id || contact._id;
     console.log("Holded contact created:", JSON.stringify(contact));
 
-    // 2. Create deal linked to the contact
+    // 2. Create opportunity (lead) in Holded CRM funnel
     const serviceLabels: Record<string, string> = {
       fontaneria: "Fontanería",
       electricidad: "Electricidad",
@@ -60,29 +60,31 @@ export async function POST(request: Request) {
       otros: "Otros",
     };
 
-    const dealBody = {
-      name: `Presupuesto - ${serviceLabels[service] || service} - ${name}`,
-      contact: contactId,
-      pipeline: "6a0dfaf3ebcdfad76906e5e3",
-      notes: `Servicio: ${serviceLabels[service] || service}\nIdioma: ${lang}\n\n${description}`,
-    };
-    console.log("Holded deal request body:", JSON.stringify(dealBody));
+    const FUNNEL_ID = "6a0dfaf3ebcdfad76906e5e3";
+    const STAGE_LEAD_ID = "6a0dfaf3ebcdfad76906e5e4";
 
-    const dealRes = await fetch(`${HOLDED_API_URL}/deals`, {
+    const leadBody = {
+      name: `${serviceLabels[service] || service} - ${name}`,
+      contactId,
+      funnelId: FUNNEL_ID,
+      stageId: STAGE_LEAD_ID,
+    };
+    console.log("Holded CRM lead request body:", JSON.stringify(leadBody));
+
+    const leadRes = await fetch("https://api.holded.com/api/crm/v1/leads", {
       method: "POST",
       headers: {
         key: apiKey,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(dealBody),
+      body: JSON.stringify(leadBody),
     });
 
-    const dealResponseText = await dealRes.text();
-    console.log("Holded deal response status:", dealRes.status);
-    console.log("Holded deal response body:", dealResponseText);
+    const leadResponseText = await leadRes.text();
+    console.log("Holded CRM lead response:", leadRes.status, leadResponseText);
 
-    if (!dealRes.ok) {
-      console.error("Holded deal creation failed:", dealRes.status, dealResponseText);
+    if (!leadRes.ok) {
+      console.error("Holded CRM lead creation failed:", leadRes.status, leadResponseText);
       // Contact was created, so we still return success
     }
 
