@@ -68,6 +68,7 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         name: `Presupuesto - ${serviceLabels[service] || service} - ${name}`,
         contact: contactId,
+        pipeline: "6a0dfaf3ebcdfad76906e5e3",
         notes: `Servicio: ${serviceLabels[service] || service}\nIdioma: ${lang}\n\n${description}`,
       }),
     });
