@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "Hogarvex - Instalaciones, Reparaciones y Mantenimiento en Barcelona",
+    "description": "Servicio profesional de fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto en 1 hora. Equipo técnico certificado con 20 años de experiencia.",
+    "ogTitle": "Hogarvex - Tu hogar en buenas manos",
+    "ogDescription": "Fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto inmediato por WhatsApp."
+  },
+  "header": {
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "reviews": "Reseñas",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Tu hogar en buenas manos",
+    "subtitle": "Fontanería, electricidad y reparaciones en Barcelona y Maresme",
+    "cta": "Pide presupuesto gratis",
+    "badge": "Presupuesto en 1 hora",
+    "trust1": "20 años de experiencia",
+    "trust2": "Equipo certificado",
+    "trust3": "Garantía incluida"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Soluciones profesionales para tu hogar con transparencia y calidad",
+    "plumbing": {
+      "title": "Fontanería",
+      "description": "Reparamos y mantenemos todas las instalaciones de agua de tu hogar.",
+      "examples": [
+        "Reparación de fugas y goteos",
+        "Instalación y cambio de grifos",
+        "Desatascos de tuberías y desagües",
+        "Instalación de termos y calentadores",
+        "Reforma de cuartos de baño"
+      ]
+    },
+    "electrical": {
+      "title": "Electricidad",
+      "description": "Instalaciones eléctricas seguras y eficientes para tu tranquilidad.",
+      "examples": [
+        "Localización y reparación de cortocircuitos",
+        "Instalación de puntos de luz y enchufes",
+        "Cuadros eléctricos y diferenciales",
+        "Instalaciones de baja tensión",
+        "Certificados eléctricos"
+      ]
+    },
+    "repairs": {
+      "title": "Reparaciones e instalaciones",
+      "description": "Todo tipo de reparaciones y montajes para que tu hogar funcione perfecto.",
+      "examples": [
+        "Instalación de aire acondicionado",
+        "Montaje de muebles y estanterías",
+        "Reparación de persianas y cerraduras",
+        "Pequeñas reformas y albañilería",
+        "Mantenimiento preventivo del hogar"
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "¿Cómo funciona?",
+    "subtitle": "En 3 pasos sencillos tienes tu presupuesto",
+    "step1": {
+      "title": "Contáctanos",
+      "description": "Rellena el formulario o escríbenos por WhatsApp"
+    },
+    "step2": {
+      "title": "Envía una foto",
+      "description": "Mándanos una imagen de la avería por WhatsApp para evaluar el trabajo"
+    },
+    "step3": {
+      "title": "Presupuesto en 1h",
+      "description": "Recibe un presupuesto sin compromiso en menos de una hora"
+    }
+  },
+  "projects": {
+    "title": "Proyectos realizados",
+    "subtitle": "Algunos de nuestros trabajos recientes en Barcelona y Maresme",
+    "project1": {
+      "title": "Reforma de baño completa",
+      "location": "Tiana, Maresme"
+    },
+    "project2": {
+      "title": "Instalación eléctrica vivienda",
+      "location": "Barcelona, Eixample"
+    },
+    "project3": {
+      "title": "Reparación de tuberías",
+      "location": "Badalona"
+    },
+    "project4": {
+      "title": "Instalación aire acondicionado",
+      "location": "Premià de Mar"
+    }
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "La confianza de nuestros clientes es nuestra mejor carta de presentación",
+    "review1": {
+      "name": "María G.",
+      "location": "Barcelona",
+      "text": "Vinieron el mismo día que llamé. Solucionaron una fuga que llevaba semanas dándome problemas. Muy profesionales y limpios.",
+      "rating": 5
+    },
+    "review2": {
+      "name": "Pere S.",
+      "location": "Tiana",
+      "text": "Reforma del baño impecable. Cumplieron con el presupuesto y los plazos. Repetiré sin duda.",
+      "rating": 5
+    },
+    "review3": {
+      "name": "Laura M.",
+      "location": "Premià de Mar",
+      "text": "Excelente servicio de electricidad. Me explicaron todo con claridad y el precio fue justo. Muy recomendables.",
+      "rating": 5
+    },
+    "review4": {
+      "name": "Joan R.",
+      "location": "Badalona",
+      "text": "Rápidos, eficaces y con muy buen trato. El presupuesto por WhatsApp es comodísimo.",
+      "rating": 5
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Resolvemos tus dudas más habituales",
+    "items": [
+      {
+        "question": "¿Cuál es vuestra zona de actuación?",
+        "answer": "Trabajamos en toda Barcelona y la comarca del Maresme. Nos desplazamos a tu domicilio sin coste adicional dentro de nuestra zona de cobertura."
+      },
+      {
+        "question": "¿Cuánto tardáis en dar un presupuesto?",
+        "answer": "Nos comprometemos a darte un presupuesto en menos de 1 hora desde que recibimos tu consulta con las fotos de la avería o instalación."
+      },
+      {
+        "question": "¿El presupuesto tiene algún coste?",
+        "answer": "No, nuestros presupuestos son totalmente gratuitos y sin compromiso."
+      },
+      {
+        "question": "¿Qué garantía ofrecéis?",
+        "answer": "Ofrecemos un mínimo de 6 meses de garantía en mano de obra y 2 años en materiales, según la legislación vigente."
+      },
+      {
+        "question": "¿Cuál es vuestro horario?",
+        "answer": "Nuestro horario de atención es de lunes a sábado, de 8:00 a 20:00 horas."
+      },
+      {
+        "question": "¿Puedo enviar fotos de la avería?",
+        "answer": "¡Claro! De hecho te animamos a enviar fotos por WhatsApp. Así podemos evaluar mejor el trabajo y darte un presupuesto más preciso."
+      },
+      {
+        "question": "¿Trabajáis los fines de semana?",
+        "answer": "Sí, los sábados atendemos con horario normal (8:00-20:00). Los domingos y festivos no ofrecemos servicio regular."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Solicita tu presupuesto",
+    "subtitle": "Rellena el formulario y te respondemos en menos de 1 hora",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "phone": "Teléfono",
+    "phonePlaceholder": "Tu número de teléfono",
+    "email": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "description": "Descripción de la reparación",
+    "descriptionPlaceholder": "Cuéntanos brevemente qué necesitas...",
+    "photo": "Foto (opcional)",
+    "photoHelp": "Adjunta una imagen para un presupuesto más preciso",
+    "submit": "Enviar solicitud",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Te contactaremos en menos de 1 hora.",
+    "error": "Ha ocurrido un error. Inténtalo de nuevo o escríbenos por WhatsApp.",
+    "whatsappAlt": "¿Prefieres WhatsApp? Escríbenos directamente"
+  },
+  "footer": {
+    "description": "Servicio profesional de instalaciones, reparaciones y mantenimiento para tu hogar en Barcelona y Maresme.",
+    "schedule": "Horario: Lunes a Sábado, 8:00 - 20:00",
+    "zone": "Zona: Barcelona y Maresme",
+    "experience": "20 años de experiencia",
+    "warranty": "Garantía: 6 meses (mano de obra) / 2 años (material)",
+    "legal": "Aviso legal",
+    "privacy": "Política de privacidad",
+    "rights": "Todos los derechos reservados."
+  },
+  "whatsapp": {
+    "tooltip": "¿Necesitas ayuda? Escríbenos"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "Hogarvex - Plumbing, Electrical & Repairs in Barcelona",
+    "description": "Professional plumbing, electrical and repair services in Barcelona and Maresme. Quote within 1 hour. Certified technical team with 20 years of experience.",
+    "ogTitle": "Hogarvex - Your home in good hands",
+    "ogDescription": "Plumbing, electrical and repair services in Barcelona and Maresme. Instant quote via WhatsApp."
+  },
+  "header": {
+    "services": "Services",
+    "projects": "Projects",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Your home in good hands",
+    "subtitle": "Plumbing, electrical and repair services in Barcelona and Maresme",
+    "cta": "Get a free quote",
+    "badge": "Quote within 1 hour",
+    "trust1": "20 years of experience",
+    "trust2": "Certified team",
+    "trust3": "Warranty included"
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Professional solutions for your home with transparency and quality",
+    "plumbing": {
+      "title": "Plumbing",
+      "description": "We repair and maintain all water installations in your home.",
+      "examples": [
+        "Leak and drip repairs",
+        "Tap installation and replacement",
+        "Pipe and drain unblocking",
+        "Water heater installation",
+        "Bathroom renovation"
+      ]
+    },
+    "electrical": {
+      "title": "Electrical",
+      "description": "Safe and efficient electrical installations for your peace of mind.",
+      "examples": [
+        "Short circuit detection and repair",
+        "Light point and socket installation",
+        "Electrical panels and circuit breakers",
+        "Low voltage installations",
+        "Electrical certificates"
+      ]
+    },
+    "repairs": {
+      "title": "Repairs & installations",
+      "description": "All types of repairs and installations to keep your home running perfectly.",
+      "examples": [
+        "Air conditioning installation",
+        "Furniture and shelving assembly",
+        "Shutter and lock repairs",
+        "Small renovations and masonry",
+        "Preventive home maintenance"
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "How does it work?",
+    "subtitle": "Get your quote in 3 simple steps",
+    "step1": {
+      "title": "Contact us",
+      "description": "Fill in the form or message us on WhatsApp"
+    },
+    "step2": {
+      "title": "Send a photo",
+      "description": "Send us a picture of the issue via WhatsApp so we can assess the job"
+    },
+    "step3": {
+      "title": "Quote in 1 hour",
+      "description": "Receive a no-obligation quote in less than one hour"
+    }
+  },
+  "projects": {
+    "title": "Completed projects",
+    "subtitle": "Some of our recent work in Barcelona and Maresme",
+    "project1": {
+      "title": "Full bathroom renovation",
+      "location": "Tiana, Maresme"
+    },
+    "project2": {
+      "title": "Residential electrical installation",
+      "location": "Barcelona, Eixample"
+    },
+    "project3": {
+      "title": "Pipe repair",
+      "location": "Badalona"
+    },
+    "project4": {
+      "title": "Air conditioning installation",
+      "location": "Premià de Mar"
+    }
+  },
+  "reviews": {
+    "title": "What our clients say",
+    "subtitle": "Our clients' trust is our best introduction",
+    "review1": {
+      "name": "María G.",
+      "location": "Barcelona",
+      "text": "They came the same day I called. Fixed a leak that had been bothering me for weeks. Very professional and clean.",
+      "rating": 5
+    },
+    "review2": {
+      "name": "Pere S.",
+      "location": "Tiana",
+      "text": "Impeccable bathroom renovation. They met the budget and deadlines. I'll definitely use them again.",
+      "rating": 5
+    },
+    "review3": {
+      "name": "Laura M.",
+      "location": "Premià de Mar",
+      "text": "Excellent electrical service. They explained everything clearly and the price was fair. Highly recommended.",
+      "rating": 5
+    },
+    "review4": {
+      "name": "Joan R.",
+      "location": "Badalona",
+      "text": "Fast, efficient and very friendly. Getting a quote via WhatsApp is so convenient.",
+      "rating": 5
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Answers to your most common questions",
+    "items": [
+      {
+        "question": "What is your service area?",
+        "answer": "We work throughout Barcelona and the Maresme region. We come to your home at no additional cost within our coverage area."
+      },
+      {
+        "question": "How long does it take to get a quote?",
+        "answer": "We commit to providing a quote within 1 hour of receiving your enquiry with photos of the issue or installation needed."
+      },
+      {
+        "question": "Is the quote free?",
+        "answer": "Yes, our quotes are completely free and with no obligation."
+      },
+      {
+        "question": "What warranty do you offer?",
+        "answer": "We offer a minimum of 6 months warranty on labour and 2 years on materials, as required by law."
+      },
+      {
+        "question": "What are your working hours?",
+        "answer": "Our service hours are Monday to Saturday, from 8:00 AM to 8:00 PM."
+      },
+      {
+        "question": "Can I send photos of the issue?",
+        "answer": "Absolutely! In fact, we encourage you to send photos via WhatsApp. This helps us better assess the work and give you a more accurate quote."
+      },
+      {
+        "question": "Do you work on weekends?",
+        "answer": "Yes, we work on Saturdays with regular hours (8:00 AM - 8:00 PM). We do not offer regular service on Sundays and public holidays."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Request your quote",
+    "subtitle": "Fill in the form and we'll get back to you within 1 hour",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "phone": "Phone",
+    "phonePlaceholder": "Your phone number",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "description": "Description of the repair",
+    "descriptionPlaceholder": "Briefly tell us what you need...",
+    "photo": "Photo (optional)",
+    "photoHelp": "Attach an image for a more accurate quote",
+    "submit": "Send request",
+    "sending": "Sending...",
+    "success": "Message sent! We'll contact you within 1 hour.",
+    "error": "An error occurred. Please try again or message us on WhatsApp.",
+    "whatsappAlt": "Prefer WhatsApp? Message us directly"
+  },
+  "footer": {
+    "description": "Professional installation, repair and maintenance services for your home in Barcelona and Maresme.",
+    "schedule": "Hours: Monday to Saturday, 8:00 AM - 8:00 PM",
+    "zone": "Area: Barcelona and Maresme",
+    "experience": "20 years of experience",
+    "warranty": "Warranty: 6 months (labour) / 2 years (materials)",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved."
+  },
+  "whatsapp": {
+    "tooltip": "Need help? Message us"
+  }
+}
