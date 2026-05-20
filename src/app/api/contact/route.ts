@@ -50,6 +50,7 @@ export async function POST(request: Request) {
 
     const contact = await contactRes.json();
     const contactId = contact.id || contact._id;
+    console.log("Holded contact created:", JSON.stringify(contact));
 
     // 2. Create deal linked to the contact
     const serviceLabels: Record<string, string> = {
@@ -59,23 +60,29 @@ export async function POST(request: Request) {
       otros: "Otros",
     };
 
+    const dealBody = {
+      name: `Presupuesto - ${serviceLabels[service] || service} - ${name}`,
+      contact: contactId,
+      pipeline: "6a0dfaf3ebcdfad76906e5e3",
+      notes: `Servicio: ${serviceLabels[service] || service}\nIdioma: ${lang}\n\n${description}`,
+    };
+    console.log("Holded deal request body:", JSON.stringify(dealBody));
+
     const dealRes = await fetch(`${HOLDED_API_URL}/deals`, {
       method: "POST",
       headers: {
         key: apiKey,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name: `Presupuesto - ${serviceLabels[service] || service} - ${name}`,
-        contact: contactId,
-        pipeline: "6a0dfaf3ebcdfad76906e5e3",
-        notes: `Servicio: ${serviceLabels[service] || service}\nIdioma: ${lang}\n\n${description}`,
-      }),
+      body: JSON.stringify(dealBody),
     });
 
+    const dealResponseText = await dealRes.text();
+    console.log("Holded deal response status:", dealRes.status);
+    console.log("Holded deal response body:", dealResponseText);
+
     if (!dealRes.ok) {
-      const err = await dealRes.text();
-      console.error("Holded deal creation failed:", err);
+      console.error("Holded deal creation failed:", dealRes.status, dealResponseText);
       // Contact was created, so we still return success
     }
 
