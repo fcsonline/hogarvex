@@ -19,11 +19,11 @@ export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
         {/* Logo grande */}
         <div className="flex-shrink-0">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-invert.png"
             alt="Hogarvex - Instalaciones, Reparaciones y Mantenimiento"
             width={280}
             height={280}
-            className="w-48 md:w-72 h-auto drop-shadow-2xl brightness-0 invert"
+            className="w-48 md:w-72 h-auto drop-shadow-2xl"
             priority
           />
         </div>
