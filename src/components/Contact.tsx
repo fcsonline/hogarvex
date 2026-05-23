@@ -1,16 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import type { Dictionary, Locale } from "@/app/[lang]/dictionaries";
 
 export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const typedRef = useRef(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
 
     const formData = new FormData(e.currentTarget);
+    formData.set("ty", typedRef.current ? "true" : "false");
 
     try {
       const res = await fetch("/api/contact", {
@@ -41,7 +43,11 @@ export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} onKeyDown={() => { typedRef.current = true; }} className="space-y-6">
+          {/* Honeypot field - hidden from real users */}
+          <div style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
+            <input type="text" name="message" tabIndex={-1} autoComplete="off" />
+          </div>
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">

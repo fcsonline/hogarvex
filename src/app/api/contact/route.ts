@@ -1,92 +1,96 @@
 import { NextResponse } from "next/server";
+import FormData from "form-data";
+import Mailgun from "mailgun.js";
 
-const HOLDED_API_URL = "https://api.holded.com/api/invoicing/v1";
+const serviceLabels: Record<string, string> = {
+  fontaneria: "Fontanería",
+  electricidad: "Electricidad",
+  reparaciones: "Reparaciones",
+  otros: "Otros",
+};
 
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
 
-    const name = formData.get("name") as string;
-    const phone = formData.get("phone") as string;
-    const email = formData.get("email") as string;
-    const service = formData.get("service") as string;
-    const description = formData.get("description") as string;
-    const lang = formData.get("lang") as string;
-
-    const apiKey = process.env.HOLDED_API_KEY;
-    if (!apiKey) {
-      console.error("HOLDED_API_KEY not configured");
-      return NextResponse.json(
-        { error: "Server configuration error" },
-        { status: 500 }
-      );
-    }
-
-    // 1. Create contact (lead) in Holded
-    const contactRes = await fetch(`${HOLDED_API_URL}/contacts`, {
-      method: "POST",
-      headers: {
-        key: apiKey,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        type: "lead",
-        tags: ["web", service, lang],
-        note: description,
-      }),
-    });
-
-    if (!contactRes.ok) {
-      const err = await contactRes.text();
-      console.error("Holded contact creation failed:", err);
-      return NextResponse.json(
-        { error: "Failed to create contact" },
-        { status: 500 }
-      );
-    }
-
-    const contact = await contactRes.json();
-    const contactId = contact.id || contact._id;
-    console.log("Holded contact created:", JSON.stringify(contact));
-
-    // 2. Create opportunity (lead) in Holded CRM funnel
-    const serviceLabels: Record<string, string> = {
-      fontaneria: "Fontanería",
-      electricidad: "Electricidad",
-      reparaciones: "Reparaciones",
-      otros: "Otros",
+    const formGet = (name: string) => {
+      const value = formData.get(name);
+      return value ? value.toString() : "";
     };
 
-    const FUNNEL_ID = "6a0dfaf3ebcdfad76906e5e3";
-    const STAGE_LEAD_ID = "6a0dfaf3ebcdfad76906e5e4";
+    // Bot detection - Check 1: The bot didn't fill out the fields with key strokes
+    if (formGet("ty") === "false") {
+      console.log(`Bot detected - Check 1: '${formGet("name").slice(0, 150)}'`);
+      return NextResponse.json({ success: true });
+    }
 
-    const leadBody = {
-      name: `${serviceLabels[service] || service} - ${name}`,
-      contactId,
-      funnelId: FUNNEL_ID,
-      stageId: STAGE_LEAD_ID,
-    };
-    console.log("Holded CRM lead request body:", JSON.stringify(leadBody));
+    // Bot detection - Check 2: The bot filled out the honeypot hidden input
+    if (Boolean(formData.get("message"))) {
+      console.log(`Bot detected - Check 2: '${formGet("name").slice(0, 150)}'`);
+      return NextResponse.json({ success: true });
+    }
 
-    const leadRes = await fetch("https://api.holded.com/api/crm/v1/leads", {
-      method: "POST",
-      headers: {
-        key: apiKey,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(leadBody),
+    // Bot detection - Check 3: Testing purposes
+    if (formGet("name").includes("Bot")) {
+      console.log(`Bot detected - Check 3: '${formGet("name").slice(0, 150)}'`);
+      return NextResponse.json({ success: true });
+    }
+
+    const name = formGet("name");
+    const phone = formGet("phone");
+    const email = formGet("email");
+    const service = formGet("service");
+    const description = formGet("description");
+    const lang = formGet("lang");
+
+    const serviceLabel = serviceLabels[service] || service;
+    const subject = `[Hogarvex] ${serviceLabel} - ${name}`;
+
+    const text = `
+Nombre: ${name}
+Email: ${email}
+Teléfono: ${phone}
+Servicio: ${serviceLabel}
+Idioma: ${lang}
+Descripción:
+${description}
+
+Enviado desde: https://www.hogarvex.com
+    `.trim();
+
+    const html = `
+<p><strong>Nombre:</strong> ${name}</p>
+<p><strong>Email:</strong> ${email}</p>
+<p><strong>Teléfono:</strong> ${phone}</p>
+<p><strong>Servicio:</strong> ${serviceLabel}</p>
+<p><strong>Idioma:</strong> ${lang}</p>
+<p><strong>Descripción:</strong></p>
+<p>${description}</p>
+<br>
+<p>Enviado desde: <a href="https://www.hogarvex.com">Hogarvex</a></p>
+    `.trim();
+
+    const from = `${name} <${email}>`;
+
+    const mailgun = new Mailgun(FormData);
+    const mg = mailgun.client({
+      username: "api",
+      timeout: 10000,
+      key: process.env.MAILGUN_API_KEY ?? "empty-api-key",
     });
 
-    const leadResponseText = await leadRes.text();
-    console.log("Holded CRM lead response:", leadRes.status, leadResponseText);
+    const domain = process.env.MAILGUN_DOMAIN ?? "sandbox.mailgun.org";
 
-    if (!leadRes.ok) {
-      console.error("Holded CRM lead creation failed:", leadRes.status, leadResponseText);
-      // Contact was created, so we still return success
-    }
+    await mg.messages.create(domain, {
+      from,
+      to: "hogarvex@gmail.com",
+      bcc: "fcsonline@gmail.com",
+      subject,
+      text,
+      html,
+    });
+
+    console.log("Mail sent!");
 
     return NextResponse.json({ success: true });
   } catch (error) {
