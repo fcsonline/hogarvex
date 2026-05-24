@@ -61,7 +61,7 @@ Enviado desde: https://www.hogarvex.es
     const html = `
 <p><strong>Nombre:</strong> ${name}</p>
 <p><strong>Email:</strong> ${email}</p>
-<p><strong>Teléfono:</strong> ${phone}</p>
+<p><strong>Teléfono:</strong> <a href="tel://${phone}">${phone}</a></p>
 <p><strong>Servicio:</strong> ${serviceLabel}</p>
 <p><strong>Idioma:</strong> ${lang}</p>
 <p><strong>Descripción:</strong></p>
