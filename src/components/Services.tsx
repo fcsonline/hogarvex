@@ -17,6 +17,17 @@ const serviceIcons = {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
   ),
+  flooring: (
+    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4h16v16H4V4z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 10h16M4 16h16M10 4v6M14 10v6M8 16v4" />
+    </svg>
+  ),
+  airconditioning: (
+    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8h18v6H3V8zM7 14v3M12 14v4M17 14v3M6 11h.01M9 11h.01" />
+    </svg>
+  ),
 };
 
 export function Services({ dict }: { dict: Dictionary }) {
@@ -24,6 +35,8 @@ export function Services({ dict }: { dict: Dictionary }) {
     { key: "plumbing" as const, icon: serviceIcons.plumbing },
     { key: "electrical" as const, icon: serviceIcons.electrical },
     { key: "repairs" as const, icon: serviceIcons.repairs },
+    { key: "flooring" as const, icon: serviceIcons.flooring },
+    { key: "airconditioning" as const, icon: serviceIcons.airconditioning },
   ];
 
   return (
@@ -38,7 +51,7 @@ export function Services({ dict }: { dict: Dictionary }) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map(({ key, icon }) => {
             const service = dict.services[key];
             return (

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hogarvex - Plumbing, Electrical & Repairs in Barcelona",
-    "description": "Professional plumbing, electrical and repair services in Barcelona and Maresme. Quote within 1 hour. Certified technical team with 20 years of experience.",
+    "description": "Professional plumbing, electrical, flooring, air conditioning and repair services in Barcelona and Maresme. Quote within 1 hour. Certified technical team with 20 years of experience.",
     "ogTitle": "Hogarvex - Your home in good hands",
     "ogDescription": "Plumbing, electrical and repair services in Barcelona and Maresme. Instant quote via WhatsApp."
   },
@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "Your home in good hands",
-    "subtitle": "Plumbing, electrical and repair services in Barcelona and Maresme",
+    "subtitle": "Plumbing, electrical, flooring, air conditioning and repair services in Barcelona and Maresme",
     "cta": "Get a free quote",
     "badge": "Quote within 1 hour",
     "trust1": "20 years of experience",
@@ -50,11 +50,29 @@
       "title": "Repairs & installations",
       "description": "All types of repairs and installations to keep your home running perfectly.",
       "examples": [
-        "Air conditioning installation",
         "Furniture and shelving assembly",
         "Shutter and lock repairs",
         "Small renovations and masonry",
         "Preventive home maintenance"
+      ]
+    },
+    "flooring": {
+      "title": "Flooring",
+      "description": "We install and repair all types of flooring so your floors look perfect.",
+      "examples": [
+        "Floating and solid floor installation: natural wood, laminate and SPC vinyl",
+        "Repair of swollen, broken or lifted planks and creak elimination",
+        "Sanding, polishing and varnishing to restore original colour and protection"
+      ]
+    },
+    "airconditioning": {
+      "title": "Air conditioning",
+      "description": "We install, repair and service your air conditioning so it cools and heats properly all year round.",
+      "examples": [
+        "Split, multi-split and ducted system installation with power and placement advice",
+        "R32 and R410A refrigerant gas recharge with leak detection and repair",
+        "Custom duct and grille installation to climate-control your entire home",
+        "Annual maintenance: filter, turbine and drain cleaning"
       ]
     }
   },
@@ -170,6 +188,8 @@
     "servicePlumbing": "Plumbing",
     "serviceElectrical": "Electrical",
     "serviceRepairs": "Repairs & installations",
+    "serviceFlooring": "Flooring",
+    "serviceAirConditioning": "Air conditioning",
     "serviceOther": "Other",
     "description": "Description of the repair",
     "descriptionPlaceholder": "Briefly tell us what you need...",

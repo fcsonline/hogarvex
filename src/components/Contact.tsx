@@ -106,6 +106,8 @@ export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
               <option value="fontaneria">{dict.contact.servicePlumbing}</option>
               <option value="electricidad">{dict.contact.serviceElectrical}</option>
               <option value="reparaciones">{dict.contact.serviceRepairs}</option>
+              <option value="tarimas">{dict.contact.serviceFlooring}</option>
+              <option value="aire-acondicionado">{dict.contact.serviceAirConditioning}</option>
               <option value="otros">{dict.contact.serviceOther}</option>
             </select>
           </div>

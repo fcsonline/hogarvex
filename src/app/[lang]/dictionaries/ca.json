@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hogarvex - Instal·lacions, Reparacions i Manteniment a Barcelona",
-    "description": "Servei professional de lampisteria, electricitat i reparacions a Barcelona i Maresme. Pressupost en 1 hora. Equip tècnic certificat amb 20 anys d'experiència.",
+    "description": "Servei professional de lampisteria, electricitat, tarimes, aire condicionat i reparacions a Barcelona i Maresme. Pressupost en 1 hora. Equip tècnic certificat amb 20 anys d'experiència.",
     "ogTitle": "Hogarvex - La teva llar en bones mans",
     "ogDescription": "Lampisteria, electricitat i reparacions a Barcelona i Maresme. Pressupost immediat per WhatsApp."
   },
@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "La teva llar en bones mans",
-    "subtitle": "Lampisteria, electricitat i reparacions a Barcelona i Maresme",
+    "subtitle": "Lampisteria, electricitat, tarimes, aire condicionat i reparacions a Barcelona i Maresme",
     "cta": "Demana pressupost gratis",
     "badge": "Pressupost en 1 hora",
     "trust1": "20 anys d'experiència",
@@ -50,11 +50,29 @@
       "title": "Reparacions i instal·lacions",
       "description": "Tot tipus de reparacions i muntatges perquè casa teva funcioni perfecte.",
       "examples": [
-        "Instal·lació d'aire condicionat",
         "Muntatge de mobles i prestatgeries",
         "Reparació de persianes i panys",
         "Petites reformes i paleta",
         "Manteniment preventiu de la llar"
+      ]
+    },
+    "flooring": {
+      "title": "Tarimes",
+      "description": "Instal·lem i reparem tot tipus de tarimes perquè el teu terra llueixi perfecte.",
+      "examples": [
+        "Instal·lació de tarima flotant i massissa: fusta natural, laminada i vinílica SPC",
+        "Reparació de lames inflades, trencades o aixecades i eliminació de cruixits",
+        "Lijat, polit i envernissat per recuperar el color i la protecció original"
+      ]
+    },
+    "airconditioning": {
+      "title": "Aire condicionat",
+      "description": "Instal·lem, reparem i posem a punt el teu aire condicionat perquè refredi i escalfi bé tot l'any.",
+      "examples": [
+        "Instal·lació de split, multisplit i conductes amb assessorament en potència i ubicació",
+        "Recàrrega de gas refrigerant R32 i R410A amb detecció i reparació de fuites",
+        "Instal·lació de conductes i reixetes a mida per climatitzar tota la casa",
+        "Manteniment anual: neteja de filtres, turbina i desguàs"
       ]
     }
   },
@@ -170,6 +188,8 @@
     "servicePlumbing": "Lampisteria",
     "serviceElectrical": "Electricitat",
     "serviceRepairs": "Reparacions i instal·lacions",
+    "serviceFlooring": "Tarimes",
+    "serviceAirConditioning": "Aire condicionat",
     "serviceOther": "Altres",
     "description": "Descripció de la reparació",
     "descriptionPlaceholder": "Explica'ns breument què necessites...",

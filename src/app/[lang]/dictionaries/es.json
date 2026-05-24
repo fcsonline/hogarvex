@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hogarvex - Instalaciones, Reparaciones y Mantenimiento en Barcelona",
-    "description": "Servicio profesional de fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto en 1 hora. Equipo técnico certificado con 20 años de experiencia.",
+    "description": "Servicio profesional de fontanería, electricidad, tarimas, aire acondicionado y reparaciones en Barcelona y Maresme. Presupuesto en 1 hora. Equipo técnico certificado con 20 años de experiencia.",
     "ogTitle": "Hogarvex - Tu hogar en buenas manos",
     "ogDescription": "Fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto inmediato por WhatsApp."
   },
@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "Tu hogar en buenas manos",
-    "subtitle": "Fontanería, electricidad y reparaciones en Barcelona y Maresme",
+    "subtitle": "Fontanería, electricidad, tarimas, aire acondicionado y reparaciones en Barcelona y Maresme",
     "cta": "Pide presupuesto gratis",
     "badge": "Presupuesto en 1 hora",
     "trust1": "20 años de experiencia",
@@ -50,11 +50,29 @@
       "title": "Reparaciones e instalaciones",
       "description": "Todo tipo de reparaciones y montajes para que tu hogar funcione perfecto.",
       "examples": [
-        "Instalación de aire acondicionado",
         "Montaje de muebles y estanterías",
         "Reparación de persianas y cerraduras",
         "Pequeñas reformas y albañilería",
         "Mantenimiento preventivo del hogar"
+      ]
+    },
+    "flooring": {
+      "title": "Tarimas",
+      "description": "Instalamos y reparamos todo tipo de tarimas para que tu suelo luzca perfecto.",
+      "examples": [
+        "Instalación de tarima flotante y maciza: madera natural, laminada y vinílica SPC",
+        "Reparación de lamas hinchadas, rotas o levantadas y eliminación de crujidos",
+        "Lijado, pulido y barnizado para devolver el color y protección original"
+      ]
+    },
+    "airconditioning": {
+      "title": "Aire acondicionado",
+      "description": "Instalamos, reparamos y ponemos a punto tu aire acondicionado para que enfríe y caliente bien todo el año.",
+      "examples": [
+        "Instalación de split, multisplit y conductos con asesoramiento en potencia y ubicación",
+        "Recarga de gas refrigerante R32 y R410A con detección y reparación de fugas",
+        "Instalación de conductos y rejillas a medida para climatizar toda la casa",
+        "Mantenimiento anual: limpieza de filtros, turbina y desagüe"
       ]
     }
   },
@@ -170,6 +188,8 @@
     "servicePlumbing": "Fontanería",
     "serviceElectrical": "Electricidad",
     "serviceRepairs": "Reparaciones e instalaciones",
+    "serviceFlooring": "Tarimas",
+    "serviceAirConditioning": "Aire acondicionado",
     "serviceOther": "Otros",
     "description": "Descripción de la reparación",
     "descriptionPlaceholder": "Cuéntanos brevemente qué necesitas...",
