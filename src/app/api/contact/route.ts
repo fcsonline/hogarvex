@@ -93,6 +93,40 @@ Enviado desde: https://www.hogarvex.es
 
     console.log("Mail sent!");
 
+    // Create contact in Holded CRM
+    const holdedApiKey = process.env.HOLDED_API_KEY;
+    if (holdedApiKey) {
+      try {
+        const contactRes = await fetch(
+          "https://api.holded.com/api/invoicing/v1/contacts",
+          {
+            method: "POST",
+            headers: {
+              key: holdedApiKey,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name,
+              email,
+              phone,
+              type: "lead",
+              tags: ["web", service, lang],
+              note: description,
+            }),
+          }
+        );
+
+        if (!contactRes.ok) {
+          const err = await contactRes.text();
+          console.error("Holded contact creation failed:", err);
+        } else {
+          console.log("Holded contact created");
+        }
+      } catch (holdedError) {
+        console.error("Holded contact creation error:", holdedError);
+      }
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Contact form error:", error);
