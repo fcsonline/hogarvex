@@ -55,7 +55,7 @@ Idioma: ${lang}
 Descripción:
 ${description}
 
-Enviado desde: https://www.hogarvex.com
+Enviado desde: https://www.hogarvex.es
     `.trim();
 
     const html = `
@@ -67,7 +67,7 @@ Enviado desde: https://www.hogarvex.com
 <p><strong>Descripción:</strong></p>
 <p>${description}</p>
 <br>
-<p>Enviado desde: <a href="https://www.hogarvex.com">Hogarvex</a></p>
+<p>Enviado desde: <a href="https://www.hogarvex.es">Hogarvex</a></p>
     `.trim();
 
     const from = `${name} <${email}>`;
