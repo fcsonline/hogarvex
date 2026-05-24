@@ -77,6 +77,7 @@ Enviado desde: https://www.hogarvex.com
       username: "api",
       timeout: 10000,
       key: process.env.MAILGUN_API_KEY ?? "empty-api-key",
+      url: "https://api.eu.mailgun.net",
     });
 
     const domain = process.env.MAILGUN_DOMAIN ?? "sandbox.mailgun.org";
