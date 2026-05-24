@@ -62,6 +62,11 @@ export function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
                 +34 633 45 04 17
               </a>
             </p>
+            <p className="text-gray-400">
+              <a href="/hogarvex.vcf" download className="hover:text-gold transition-colors">
+                Guardar contacto
+              </a>
+            </p>
             <div className="flex gap-4 pt-2">
               <Link href={`/${lang}/aviso-legal`} className="text-gray-500 hover:text-gold transition-colors">
                 {dict.footer.legal}

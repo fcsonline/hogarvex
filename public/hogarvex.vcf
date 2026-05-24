@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Hogarvex
+ORG:Hogarvex
+TEL;TYPE=CELL:+34 633 45 04 17
+EMAIL:hogarvex@gmail.com
+URL:https://hogarvex.com
+ADR;TYPE=WORK:;;Tiana;Barcelona;;08391;España
+PHOTO;VALUE=URI:https://hogarvex.com/images/logo-small.png
+END:VCARD
