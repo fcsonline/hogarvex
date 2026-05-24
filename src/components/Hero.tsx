@@ -6,13 +6,12 @@ export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
     <section className="relative bg-black text-white overflow-hidden">
       {/* Background image with overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-60"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80')",
+          backgroundImage: "url('/images/hero-bg.jpg')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="flex flex-col md:flex-row items-center gap-12">

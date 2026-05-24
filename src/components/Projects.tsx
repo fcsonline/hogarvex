@@ -2,7 +2,7 @@ import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 const projectImages = [
   "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80",
-  "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+  "/images/proyecto-electricidad.webp",
   "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80",
   "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80",
 ];
