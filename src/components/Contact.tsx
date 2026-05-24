@@ -144,9 +144,7 @@ export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
               <p className="text-green-800 text-xl font-semibold mb-2">
                 {dict.contact.success}
               </p>
-              <p className="text-green-600 text-sm">
-                {dict.contact.whatsappAlt}
-              </p>
+
             </div>
           )}
           {status === "error" && (
