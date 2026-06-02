@@ -8,6 +8,7 @@
   "header": {
     "services": "Servicios",
     "projects": "Proyectos",
+    "areas": "Zonas",
     "reviews": "Reseñas",
     "faq": "Preguntas frecuentes",
     "contact": "Contacto"
@@ -92,6 +93,10 @@
       "description": "Recibe un presupuesto sin compromiso en menos de una hora"
     }
   },
+  "serviceAreas": {
+    "title": "Zonas donde trabajamos",
+    "subtitle": "Damos servicio en Barcelona y en toda la comarca del Maresme."
+  },
   "projects": {
     "title": "Proyectos realizados",
     "subtitle": "Algunos de nuestros trabajos recientes en Barcelona y Maresme",
@@ -146,7 +151,7 @@
     "items": [
       {
         "question": "¿Cuál es vuestra zona de actuación?",
-        "answer": "Trabajamos en toda Barcelona y la comarca del Maresme. Nos desplazamos a tu domicilio sin coste adicional dentro de nuestra zona de cobertura."
+        "answer": "Trabajamos en toda Barcelona y en la comarca del Maresme, incluyendo Badalona, Montgat, Tiana, El Masnou, Premià de Mar, Vilassar de Mar, Mataró, Arenys de Mar, Calella y muchos municipios más. Nos desplazamos a tu domicilio sin coste adicional dentro de nuestra zona de cobertura."
       },
       {
         "question": "¿Cuánto tardáis en dar un presupuesto?",
@@ -202,7 +207,7 @@
   "footer": {
     "description": "Servicio profesional de instalaciones, reparaciones y mantenimiento para tu hogar en Barcelona y Maresme.",
     "schedule": "Horario: Lunes a Sábado, 8:00 - 20:00",
-    "zone": "Zona: Barcelona y Maresme",
+    "zone": "Zona: Barcelona, Maresme y alrededores",
     "experience": "20 años de experiencia",
     "warranty": "Garantía: 6 meses (mano de obra) / 2 años (material)",
     "saveContact": "Guardar contacto",

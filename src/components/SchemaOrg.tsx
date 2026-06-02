@@ -1,4 +1,5 @@
 import type { Locale } from "@/app/[lang]/dictionaries";
+import { SERVICE_AREAS } from "@/lib/serviceAreas";
 
 export function SchemaOrg({ lang }: { lang: Locale }) {
   const localBusiness = {
@@ -24,7 +25,7 @@ export function SchemaOrg({ lang }: { lang: Locale }) {
       longitude: 2.2672,
     },
     areaServed: [
-      { "@type": "City", name: "Barcelona" },
+      ...SERVICE_AREAS.map((name) => ({ "@type": "City", name })),
       { "@type": "AdministrativeArea", name: "Maresme" },
     ],
     openingHoursSpecification: [
@@ -60,7 +61,7 @@ export function SchemaOrg({ lang }: { lang: Locale }) {
       name: "Hogarvex",
     },
     areaServed: [
-      { "@type": "City", name: "Barcelona" },
+      ...SERVICE_AREAS.map((name) => ({ "@type": "City", name })),
       { "@type": "AdministrativeArea", name: "Maresme" },
     ],
     hasOfferCatalog: {
