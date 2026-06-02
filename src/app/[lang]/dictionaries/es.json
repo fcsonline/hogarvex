@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hogarvex - Instalaciones, Reparaciones y Mantenimiento en Barcelona",
-    "description": "Servicio profesional de fontanería, electricidad, tarimas, aire acondicionado y reparaciones en Barcelona y Maresme. Presupuesto en 1 hora. Equipo técnico certificado con 20 años de experiencia.",
+    "description": "Servicio profesional de fontanería, electricidad, tarimas, aire acondicionado y reparaciones en Barcelona y Maresme. Presupuesto rápido y sin compromiso. Equipo técnico certificado con 20 años de experiencia.",
     "ogTitle": "Hogarvex - Tu hogar en buenas manos",
     "ogDescription": "Fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto inmediato por WhatsApp."
   },
@@ -16,7 +16,7 @@
     "title": "Tu hogar en buenas manos",
     "subtitle": "Fontanería, electricidad, tarimas, aire acondicionado y reparaciones en Barcelona y Maresme",
     "cta": "Pide presupuesto gratis",
-    "badge": "Presupuesto en 1 hora",
+    "badge": "Presupuesto rápido y sin compromiso",
     "trust1": "20 años de experiencia",
     "trust2": "Equipo certificado",
     "trust3": "Garantía incluida"
@@ -88,7 +88,7 @@
       "description": "Mándanos una imagen de la avería por WhatsApp para evaluar el trabajo"
     },
     "step3": {
-      "title": "Presupuesto en 1h",
+      "title": "Presupuesto rápido y sin compromiso",
       "description": "Recibe un presupuesto sin compromiso en menos de una hora"
     }
   },
@@ -205,6 +205,7 @@
     "zone": "Zona: Barcelona y Maresme",
     "experience": "20 años de experiencia",
     "warranty": "Garantía: 6 meses (mano de obra) / 2 años (material)",
+    "saveContact": "Guardar contacto",
     "legal": "Aviso legal",
     "privacy": "Política de privacidad",
     "rights": "Todos los derechos reservados."

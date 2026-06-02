@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hogarvex - Plumbing, Electrical & Repairs in Barcelona",
-    "description": "Professional plumbing, electrical, flooring, air conditioning and repair services in Barcelona and Maresme. Quote within 1 hour. Certified technical team with 20 years of experience.",
+    "description": "Professional plumbing, electrical, flooring, air conditioning and repair services in Barcelona and Maresme. Fast, no-obligation quote. Certified technical team with 20 years of experience.",
     "ogTitle": "Hogarvex - Your home in good hands",
     "ogDescription": "Plumbing, electrical and repair services in Barcelona and Maresme. Instant quote via WhatsApp."
   },
@@ -16,7 +16,7 @@
     "title": "Your home in good hands",
     "subtitle": "Plumbing, electrical, flooring, air conditioning and repair services in Barcelona and Maresme",
     "cta": "Get a free quote",
-    "badge": "Quote within 1 hour",
+    "badge": "Fast, no-obligation quote",
     "trust1": "20 years of experience",
     "trust2": "Certified team",
     "trust3": "Warranty included"
@@ -88,7 +88,7 @@
       "description": "Send us a picture of the issue via WhatsApp so we can assess the job"
     },
     "step3": {
-      "title": "Quote in 1 hour",
+      "title": "Fast, no-obligation quote",
       "description": "Receive a no-obligation quote in less than one hour"
     }
   },
@@ -205,6 +205,7 @@
     "zone": "Area: Barcelona and Maresme",
     "experience": "20 years of experience",
     "warranty": "Warranty: 6 months (labour) / 2 years (materials)",
+    "saveContact": "Save contact",
     "legal": "Legal notice",
     "privacy": "Privacy policy",
     "rights": "All rights reserved."
