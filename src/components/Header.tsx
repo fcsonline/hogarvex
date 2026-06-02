@@ -17,6 +17,7 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   const navLinks = [
     { href: "#servicios", label: dict.header.services },
     { href: "#proyectos", label: dict.header.projects },
+    { href: "#zonas", label: dict.header.areas },
     { href: "#resenas", label: dict.header.reviews },
     { href: "#faq", label: dict.header.faq },
     { href: "#contacto", label: dict.header.contact },

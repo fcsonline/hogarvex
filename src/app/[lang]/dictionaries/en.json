@@ -8,6 +8,7 @@
   "header": {
     "services": "Services",
     "projects": "Projects",
+    "areas": "Areas",
     "reviews": "Reviews",
     "faq": "FAQ",
     "contact": "Contact"
@@ -92,6 +93,10 @@
       "description": "Receive a no-obligation quote in less than one hour"
     }
   },
+  "serviceAreas": {
+    "title": "Areas we cover",
+    "subtitle": "We serve Barcelona and the entire Maresme region."
+  },
   "projects": {
     "title": "Completed projects",
     "subtitle": "Some of our recent work in Barcelona and Maresme",
@@ -146,7 +151,7 @@
     "items": [
       {
         "question": "What is your service area?",
-        "answer": "We work throughout Barcelona and the Maresme region. We come to your home at no additional cost within our coverage area."
+        "answer": "We work throughout Barcelona and the Maresme region, including Badalona, Montgat, Tiana, El Masnou, Premià de Mar, Vilassar de Mar, Mataró, Arenys de Mar, Calella and many more towns. We come to your home at no additional cost within our coverage area."
       },
       {
         "question": "How long does it take to get a quote?",
@@ -202,7 +207,7 @@
   "footer": {
     "description": "Professional installation, repair and maintenance services for your home in Barcelona and Maresme.",
     "schedule": "Hours: Monday to Saturday, 8:00 AM - 8:00 PM",
-    "zone": "Area: Barcelona and Maresme",
+    "zone": "Area: Barcelona, Maresme and nearby towns",
     "experience": "20 years of experience",
     "warranty": "Warranty: 6 months (labour) / 2 years (materials)",
     "legal": "Legal notice",
