@@ -10,7 +10,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: "Hogarvex - Instalaciones, Reparaciones y Mantenimiento",
   description:
-    "Servicio profesional de fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto en 1 hora. Equipo técnico certificado con 20 años de experiencia.",
+    "Servicio profesional de fontanería, electricidad y reparaciones en Barcelona y Maresme. Presupuesto rápido y sin compromiso. Equipo técnico certificado con 20 años de experiencia.",
 };
 
 export default function RootLayout({

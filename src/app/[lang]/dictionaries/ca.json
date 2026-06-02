@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hogarvex - Instal·lacions, Reparacions i Manteniment a Barcelona",
-    "description": "Servei professional de lampisteria, electricitat, tarimes, aire condicionat i reparacions a Barcelona i Maresme. Pressupost en 1 hora. Equip tècnic certificat amb 20 anys d'experiència.",
+    "description": "Servei professional de lampisteria, electricitat, tarimes, aire condicionat i reparacions a Barcelona i Maresme. Pressupost ràpid i sense compromís. Equip tècnic certificat amb 20 anys d'experiència.",
     "ogTitle": "Hogarvex - La teva llar en bones mans",
     "ogDescription": "Lampisteria, electricitat i reparacions a Barcelona i Maresme. Pressupost immediat per WhatsApp."
   },
@@ -16,7 +16,7 @@
     "title": "La teva llar en bones mans",
     "subtitle": "Lampisteria, electricitat, tarimes, aire condicionat i reparacions a Barcelona i Maresme",
     "cta": "Demana pressupost gratis",
-    "badge": "Pressupost en 1 hora",
+    "badge": "Pressupost ràpid i sense compromís",
     "trust1": "20 anys d'experiència",
     "trust2": "Equip certificat",
     "trust3": "Garantia inclosa"
@@ -88,7 +88,7 @@
       "description": "Envia'ns una imatge de l'avaria per WhatsApp per avaluar la feina"
     },
     "step3": {
-      "title": "Pressupost en 1h",
+      "title": "Pressupost ràpid i sense compromís",
       "description": "Rep un pressupost sense compromís en menys d'una hora"
     }
   },
@@ -205,6 +205,7 @@
     "zone": "Zona: Barcelona i Maresme",
     "experience": "20 anys d'experiència",
     "warranty": "Garantia: 6 mesos (mà d'obra) / 2 anys (material)",
+    "saveContact": "Desar contacte",
     "legal": "Avís legal",
     "privacy": "Política de privacitat",
     "rights": "Tots els drets reservats."

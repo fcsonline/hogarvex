@@ -64,7 +64,7 @@ export function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
             </p>
             <p className="text-gray-400">
               <a href="/hogarvex.vcf" download className="hover:text-gold transition-colors">
-                Guardar contacto
+                {dict.footer.saveContact}
               </a>
             </p>
             <div className="flex gap-4 pt-2">
